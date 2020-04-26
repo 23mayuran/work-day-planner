@@ -24,4 +24,4 @@ Features:
     
     
     Images 
-    ![](Assets/capture.png)
+    ![](Assets/Capture.png)
