@@ -7,7 +7,7 @@ $("#currentDay").text(moment().format('dddd MMMM Do YYYY, h:mm a'));
 let currentTime = moment();
 
 currentTime = currentTime.startOf("hour");
-
+let beforeTime = moment().startOf('day').add(9, "hours");
 
 time1 = beforeTime.add(0, "h");
 time1 = time1.format('hh:mm A');
