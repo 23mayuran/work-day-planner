@@ -24,4 +24,4 @@ Features:
     
     
     Images 
-    ![](Assets/Capture.PNG)
+    <img src= "Assets/Capture.PNG">
