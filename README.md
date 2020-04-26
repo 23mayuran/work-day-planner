@@ -16,6 +16,7 @@ This project has the following features:
 
 
 
+
 Features:
 
     One HTML Page-Index.html    
@@ -23,5 +24,5 @@ Features:
     One Javascript Page - Script.JS
     
     
-    Images 
-    <img src= "Assets/Capture.PNG">
+Images 
+<img src= "Assets/Capture.PNG">  
