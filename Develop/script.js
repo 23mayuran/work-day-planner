@@ -1,12 +1,13 @@
 
 
+let currentDay = moment().format('MMMM Do YYYY, h:mm a');
+        $("#currentDay").text(currentDay);
+//moment(Date);
+//$("#currentDay").text(moment().format('dddd MMMM Do YYYY, h:mm a'));
 
-moment(Date);
-$("#currentDay").text(moment().format('dddd MMMM Do YYYY, h:mm a'));
+//let currentTime = moment();
 
-let currentTime = moment();
-
-currentTime = currentTime.startOf("hour");
+//currentTime = currentTime.startOf("hour");
 let beforeTime = moment().startOf('day').add(9, "hours");
 
 time1 = beforeTime.add(0, "h");
@@ -45,3 +46,22 @@ $(".block8").text(time8);
 let time9 = beforeTime.add(1, "h");
 time9 = time9.format('hh:mm A');
 $(".block9").text(time9);
+
+
+// storage 
+let x = [9, 10, 11, 12, 1, 2, 3, 4, 5];
+// Test loop:
+for (let i = 0; i < x.length; i++) {
+    let dataHour = localStorage.getItem(x[i]);
+    // form - control
+    $(".form" + x[i]).val(dataHour);
+}
+
+$(".saveBtn").click(function () {
+    event.preventDefault();
+    let formValue = $(this).siblings(".form-control").val();
+    console.log("This worked");
+    let listItem = $(this).parent().data("hour");
+
+    localStorage.setItem(listItem, formValue);
+});
