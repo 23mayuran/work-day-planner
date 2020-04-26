@@ -25,4 +25,4 @@ Features:
     
     
 Images 
-<img src= "Assets/Capture.PNG">  
+<img src= "Assets/capture.PNG">  
